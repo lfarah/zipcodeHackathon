@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C28B51961BEE6C2100522875 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B51951BEE6C2100522875 /* AppDelegate.swift */; };
+		C28B51981BEE6C2100522875 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B51971BEE6C2100522875 /* ViewController.swift */; };
+		C28B519B1BEE6C2100522875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28B51991BEE6C2100522875 /* Main.storyboard */; };
+		C28B519D1BEE6C2100522875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28B519C1BEE6C2100522875 /* Assets.xcassets */; };
+		C28B51A01BEE6C2100522875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28B519E1BEE6C2100522875 /* LaunchScreen.storyboard */; };
+		C28B51AB1BEE6C2100522875 /* ZipcodeHackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B51AA1BEE6C2100522875 /* ZipcodeHackathonTests.swift */; };
+		C28B51B61BEE6C2200522875 /* ZipcodeHackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B51B51BEE6C2200522875 /* ZipcodeHackathonUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C28B51A71BEE6C2100522875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C28B518A1BEE6C2100522875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C28B51911BEE6C2100522875;
+			remoteInfo = ZipcodeHackathon;
+		};
+		C28B51B21BEE6C2100522875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C28B518A1BEE6C2100522875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C28B51911BEE6C2100522875;
+			remoteInfo = ZipcodeHackathon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C28B51921BEE6C2100522875 /* ZipcodeHackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZipcodeHackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C28B51951BEE6C2100522875 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C28B51971BEE6C2100522875 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C28B519A1BEE6C2100522875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C28B519C1BEE6C2100522875 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C28B519F1BEE6C2100522875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C28B51A11BEE6C2100522875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C28B51A61BEE6C2100522875 /* ZipcodeHackathonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZipcodeHackathonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C28B51AA1BEE6C2100522875 /* ZipcodeHackathonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipcodeHackathonTests.swift; sourceTree = "<group>"; };
+		C28B51AC1BEE6C2100522875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C28B51B11BEE6C2100522875 /* ZipcodeHackathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZipcodeHackathonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C28B51B51BEE6C2200522875 /* ZipcodeHackathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipcodeHackathonUITests.swift; sourceTree = "<group>"; };
+		C28B51B71BEE6C2200522875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C28B518F1BEE6C2100522875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C28B51A31BEE6C2100522875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C28B51AE1BEE6C2100522875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C28B51891BEE6C2100522875 = {
+			isa = PBXGroup;
+			children = (
+				C28B51941BEE6C2100522875 /* ZipcodeHackathon */,
+				C28B51A91BEE6C2100522875 /* ZipcodeHackathonTests */,
+				C28B51B41BEE6C2200522875 /* ZipcodeHackathonUITests */,
+				C28B51931BEE6C2100522875 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C28B51931BEE6C2100522875 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C28B51921BEE6C2100522875 /* ZipcodeHackathon.app */,
+				C28B51A61BEE6C2100522875 /* ZipcodeHackathonTests.xctest */,
+				C28B51B11BEE6C2100522875 /* ZipcodeHackathonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C28B51941BEE6C2100522875 /* ZipcodeHackathon */ = {
+			isa = PBXGroup;
+			children = (
+				C28B51951BEE6C2100522875 /* AppDelegate.swift */,
+				C28B51971BEE6C2100522875 /* ViewController.swift */,
+				C28B51991BEE6C2100522875 /* Main.storyboard */,
+				C28B519C1BEE6C2100522875 /* Assets.xcassets */,
+				C28B519E1BEE6C2100522875 /* LaunchScreen.storyboard */,
+				C28B51A11BEE6C2100522875 /* Info.plist */,
+			);
+			path = ZipcodeHackathon;
+			sourceTree = "<group>";
+		};
+		C28B51A91BEE6C2100522875 /* ZipcodeHackathonTests */ = {
+			isa = PBXGroup;
+			children = (
+				C28B51AA1BEE6C2100522875 /* ZipcodeHackathonTests.swift */,
+				C28B51AC1BEE6C2100522875 /* Info.plist */,
+			);
+			path = ZipcodeHackathonTests;
+			sourceTree = "<group>";
+		};
+		C28B51B41BEE6C2200522875 /* ZipcodeHackathonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C28B51B51BEE6C2200522875 /* ZipcodeHackathonUITests.swift */,
+				C28B51B71BEE6C2200522875 /* Info.plist */,
+			);
+			path = ZipcodeHackathonUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C28B51911BEE6C2100522875 /* ZipcodeHackathon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C28B51BA1BEE6C2200522875 /* Build configuration list for PBXNativeTarget "ZipcodeHackathon" */;
+			buildPhases = (
+				C28B518E1BEE6C2100522875 /* Sources */,
+				C28B518F1BEE6C2100522875 /* Frameworks */,
+				C28B51901BEE6C2100522875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZipcodeHackathon;
+			productName = ZipcodeHackathon;
+			productReference = C28B51921BEE6C2100522875 /* ZipcodeHackathon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C28B51A51BEE6C2100522875 /* ZipcodeHackathonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C28B51BD1BEE6C2200522875 /* Build configuration list for PBXNativeTarget "ZipcodeHackathonTests" */;
+			buildPhases = (
+				C28B51A21BEE6C2100522875 /* Sources */,
+				C28B51A31BEE6C2100522875 /* Frameworks */,
+				C28B51A41BEE6C2100522875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C28B51A81BEE6C2100522875 /* PBXTargetDependency */,
+			);
+			name = ZipcodeHackathonTests;
+			productName = ZipcodeHackathonTests;
+			productReference = C28B51A61BEE6C2100522875 /* ZipcodeHackathonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C28B51B01BEE6C2100522875 /* ZipcodeHackathonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C28B51C01BEE6C2200522875 /* Build configuration list for PBXNativeTarget "ZipcodeHackathonUITests" */;
+			buildPhases = (
+				C28B51AD1BEE6C2100522875 /* Sources */,
+				C28B51AE1BEE6C2100522875 /* Frameworks */,
+				C28B51AF1BEE6C2100522875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C28B51B31BEE6C2100522875 /* PBXTargetDependency */,
+			);
+			name = ZipcodeHackathonUITests;
+			productName = ZipcodeHackathonUITests;
+			productReference = C28B51B11BEE6C2100522875 /* ZipcodeHackathonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C28B518A1BEE6C2100522875 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Lucas Farah";
+				TargetAttributes = {
+					C28B51911BEE6C2100522875 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					C28B51A51BEE6C2100522875 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = C28B51911BEE6C2100522875;
+					};
+					C28B51B01BEE6C2100522875 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = C28B51911BEE6C2100522875;
+					};
+				};
+			};
+			buildConfigurationList = C28B518D1BEE6C2100522875 /* Build configuration list for PBXProject "ZipcodeHackathon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C28B51891BEE6C2100522875;
+			productRefGroup = C28B51931BEE6C2100522875 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C28B51911BEE6C2100522875 /* ZipcodeHackathon */,
+				C28B51A51BEE6C2100522875 /* ZipcodeHackathonTests */,
+				C28B51B01BEE6C2100522875 /* ZipcodeHackathonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C28B51901BEE6C2100522875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28B51A01BEE6C2100522875 /* LaunchScreen.storyboard in Resources */,
+				C28B519D1BEE6C2100522875 /* Assets.xcassets in Resources */,
+				C28B519B1BEE6C2100522875 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C28B51A41BEE6C2100522875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C28B51AF1BEE6C2100522875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C28B518E1BEE6C2100522875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28B51981BEE6C2100522875 /* ViewController.swift in Sources */,
+				C28B51961BEE6C2100522875 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C28B51A21BEE6C2100522875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28B51AB1BEE6C2100522875 /* ZipcodeHackathonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C28B51AD1BEE6C2100522875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28B51B61BEE6C2200522875 /* ZipcodeHackathonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C28B51A81BEE6C2100522875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C28B51911BEE6C2100522875 /* ZipcodeHackathon */;
+			targetProxy = C28B51A71BEE6C2100522875 /* PBXContainerItemProxy */;
+		};
+		C28B51B31BEE6C2100522875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C28B51911BEE6C2100522875 /* ZipcodeHackathon */;
+			targetProxy = C28B51B21BEE6C2100522875 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C28B51991BEE6C2100522875 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C28B519A1BEE6C2100522875 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C28B519E1BEE6C2100522875 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C28B519F1BEE6C2100522875 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C28B51B81BEE6C2200522875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C28B51B91BEE6C2200522875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C28B51BB1BEE6C2200522875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZipcodeHackathon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = farah.lucas.ZipcodeHackathon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C28B51BC1BEE6C2200522875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZipcodeHackathon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = farah.lucas.ZipcodeHackathon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C28B51BE1BEE6C2200522875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZipcodeHackathonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = farah.lucas.ZipcodeHackathonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZipcodeHackathon.app/ZipcodeHackathon";
+			};
+			name = Debug;
+		};
+		C28B51BF1BEE6C2200522875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZipcodeHackathonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = farah.lucas.ZipcodeHackathonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZipcodeHackathon.app/ZipcodeHackathon";
+			};
+			name = Release;
+		};
+		C28B51C11BEE6C2200522875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZipcodeHackathonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = farah.lucas.ZipcodeHackathonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZipcodeHackathon;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C28B51C21BEE6C2200522875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZipcodeHackathonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = farah.lucas.ZipcodeHackathonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZipcodeHackathon;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C28B518D1BEE6C2100522875 /* Build configuration list for PBXProject "ZipcodeHackathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C28B51B81BEE6C2200522875 /* Debug */,
+				C28B51B91BEE6C2200522875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C28B51BA1BEE6C2200522875 /* Build configuration list for PBXNativeTarget "ZipcodeHackathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C28B51BB1BEE6C2200522875 /* Debug */,
+				C28B51BC1BEE6C2200522875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C28B51BD1BEE6C2200522875 /* Build configuration list for PBXNativeTarget "ZipcodeHackathonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C28B51BE1BEE6C2200522875 /* Debug */,
+				C28B51BF1BEE6C2200522875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C28B51C01BEE6C2200522875 /* Build configuration list for PBXNativeTarget "ZipcodeHackathonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C28B51C11BEE6C2200522875 /* Debug */,
+				C28B51C21BEE6C2200522875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C28B518A1BEE6C2100522875 /* Project object */;
+}
