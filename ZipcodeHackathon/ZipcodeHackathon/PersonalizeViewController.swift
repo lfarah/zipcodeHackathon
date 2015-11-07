@@ -16,6 +16,16 @@ class PersonalizeViewController: UIViewController {
   @IBOutlet weak var barAgreebleness: UISlider!
   @IBOutlet weak var barNeuroticism: UISlider!
   
+  
+  @IBOutlet weak var lblOpenness: UILabel!
+  @IBOutlet weak var lblConscientiousness: UILabel!
+  
+  @IBOutlet weak var lblExtraversion: UILabel!
+  @IBOutlet weak var lblAgreebleness: UILabel!
+  
+  @IBOutlet weak var lblNeuroticism: UILabel!
+  
+  
   var value = 0.0
   override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,42 +50,51 @@ class PersonalizeViewController: UIViewController {
   }
   func setBarOpennessValue(value: Double)
   {
-    let finalValue = 60.0
-    if value <= finalValue
+    let finalValue = 60
+    if value <= Double(finalValue)
     {
       self.barOpenness.value = Float(value)
+      self.lblOpenness.text = "\(Int(value))%"
     }
   }
   func setbarConscientiousnessValue(value: Double)
   {
-    let finalValue = 20.0
-    if value <= finalValue
+    let finalValue = 20
+    if value <= Double(finalValue)
     {
       self.barConscientiousness.value = Float(value)
+      self.lblConscientiousness.text = "\(Int(value))%"
+
     }
   }
   func setbarExtraversionValue(value: Double)
   {
-    let finalValue = 40.0
-    if value <= finalValue
+    let finalValue = 40
+    if value <= Double(finalValue)
     {
       self.barExtraversion.value = Float(value)
+      self.lblExtraversion.text = "\(Int(value))%"
+
     }
   }
   func setbarNeuroticismValue(value: Double)
   {
-    let finalValue = 80.0
-    if value <= finalValue
+    let finalValue = 80
+    if value <= Double(finalValue)
     {
       self.barNeuroticism.value = Float(value)
+      self.lblNeuroticism.text = "\(Int(value))%"
+
     }
   }
   func setbarAgreeblenessValue(value: Double)
   {
-    let finalValue = 50.0
-    if value <= finalValue
+    let finalValue = 50
+    if value <= Double(finalValue)
     {
       self.barAgreebleness.value = Float(value)
+      self.lblAgreebleness.text = "\(Int(value))%"
+
     }
   }
   /*
