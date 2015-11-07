@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Alamofire
 class ListingsViewController: UIViewController {
 
 
@@ -17,8 +17,8 @@ class ListingsViewController: UIViewController {
   override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
+self.getStuffFromServer()
+  }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -27,7 +27,11 @@ class ListingsViewController: UIViewController {
   
   func getStuffFromServer()
   {
-    
+    Alamofire.request(.GET, "https://radiant-springs-1893.herokuapp.com/query?zipcode=94103&price=10000000")
+      .responseString { response in
+//        print("Success: \(response.result.isSuccess)")
+        print("Response String: \(response.result.value)")
+    }
   }
 
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
