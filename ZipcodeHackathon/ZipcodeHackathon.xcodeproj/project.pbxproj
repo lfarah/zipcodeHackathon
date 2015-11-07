@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C27A65BE1BEE75C000F37CFD /* PersonalizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27A65BD1BEE75C000F37CFD /* PersonalizeViewController.swift */; };
 		C28B51961BEE6C2100522875 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B51951BEE6C2100522875 /* AppDelegate.swift */; };
 		C28B51981BEE6C2100522875 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B51971BEE6C2100522875 /* ViewController.swift */; };
 		C28B519B1BEE6C2100522875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28B51991BEE6C2100522875 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C27A65BD1BEE75C000F37CFD /* PersonalizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalizeViewController.swift; sourceTree = "<group>"; };
 		C28B51921BEE6C2100522875 /* ZipcodeHackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZipcodeHackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28B51951BEE6C2100522875 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C28B51971BEE6C2100522875 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				C28B51951BEE6C2100522875 /* AppDelegate.swift */,
 				C28B51971BEE6C2100522875 /* ViewController.swift */,
 				C28B51991BEE6C2100522875 /* Main.storyboard */,
+				C27A65BD1BEE75C000F37CFD /* PersonalizeViewController.swift */,
 				C28B51C51BEE6D7700522875 /* ListingsViewController.swift */,
 				C28B51C31BEE6D5E00522875 /* ListingsTableViewCell.swift */,
 				C28B519C1BEE6C2100522875 /* Assets.xcassets */,
@@ -270,6 +273,7 @@
 				C28B51961BEE6C2100522875 /* AppDelegate.swift in Sources */,
 				C28B51C41BEE6D5E00522875 /* ListingsTableViewCell.swift in Sources */,
 				C28B51C61BEE6D7700522875 /* ListingsViewController.swift in Sources */,
+				C27A65BE1BEE75C000F37CFD /* PersonalizeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +498,7 @@
 				C28B51BC1BEE6C2200522875 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C28B51BD1BEE6C2200522875 /* Build configuration list for PBXNativeTarget "ZipcodeHackathonTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +507,7 @@
 				C28B51BF1BEE6C2200522875 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C28B51C01BEE6C2200522875 /* Build configuration list for PBXNativeTarget "ZipcodeHackathonUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +516,7 @@
 				C28B51C21BEE6C2200522875 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
