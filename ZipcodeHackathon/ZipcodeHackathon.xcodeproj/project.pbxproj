@@ -22,6 +22,7 @@
 		C2975F8B1BEE93D700590646 /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2975F8A1BEE93D700590646 /* EstimoteSDK.framework */; };
 		C2975F941BEE9C9100590646 /* BeaconTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2975F931BEE9C9100590646 /* BeaconTestViewController.swift */; };
 		C2975F961BEEA33700590646 /* overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = C2975F951BEEA33700590646 /* overlay.png */; };
+		C2975F981BEEAA2C00590646 /* profile_round-7.png in Resources */ = {isa = PBXBuildFile; fileRef = C2975F971BEEAA2C00590646 /* profile_round-7.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		C2975F8C1BEE93EE00590646 /* ZipcodeHackathon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZipcodeHackathon-Bridging-Header.h"; sourceTree = "<group>"; };
 		C2975F931BEE9C9100590646 /* BeaconTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconTestViewController.swift; sourceTree = "<group>"; };
 		C2975F951BEEA33700590646 /* overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay.png; sourceTree = "<group>"; };
+		C2975F971BEEAA2C00590646 /* profile_round-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile_round-7.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		C28B51941BEE6C2100522875 /* ZipcodeHackathon */ = {
 			isa = PBXGroup;
 			children = (
+				C2975F971BEEAA2C00590646 /* profile_round-7.png */,
 				C2975F951BEEA33700590646 /* overlay.png */,
 				C28B51C71BEE6F5C00522875 /* Baker-Haigh-Nimocks-House-Heritage-Square-Fayetteville-NC.JPG */,
 				C28B51951BEE6C2100522875 /* AppDelegate.swift */,
@@ -260,6 +263,7 @@
 				C28B51A01BEE6C2100522875 /* LaunchScreen.storyboard in Resources */,
 				C28B519D1BEE6C2100522875 /* Assets.xcassets in Resources */,
 				C28B51C81BEE6F5C00522875 /* Baker-Haigh-Nimocks-House-Heritage-Square-Fayetteville-NC.JPG in Resources */,
+				C2975F981BEEAA2C00590646 /* profile_round-7.png in Resources */,
 				C28B519B1BEE6C2100522875 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
