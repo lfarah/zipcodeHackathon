@@ -18,6 +18,9 @@
 		C28B51C41BEE6D5E00522875 /* ListingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B51C31BEE6D5E00522875 /* ListingsTableViewCell.swift */; };
 		C28B51C61BEE6D7700522875 /* ListingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B51C51BEE6D7700522875 /* ListingsViewController.swift */; };
 		C28B51C81BEE6F5C00522875 /* Baker-Haigh-Nimocks-House-Heritage-Square-Fayetteville-NC.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C28B51C71BEE6F5C00522875 /* Baker-Haigh-Nimocks-House-Heritage-Square-Fayetteville-NC.JPG */; };
+		C2975F891BEE8CB200590646 /* DetailListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2975F881BEE8CB200590646 /* DetailListingViewController.swift */; };
+		C2975F8B1BEE93D700590646 /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2975F8A1BEE93D700590646 /* EstimoteSDK.framework */; };
+		C2975F941BEE9C9100590646 /* BeaconTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2975F931BEE9C9100590646 /* BeaconTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,10 @@
 		C28B51C31BEE6D5E00522875 /* ListingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingsTableViewCell.swift; sourceTree = "<group>"; };
 		C28B51C51BEE6D7700522875 /* ListingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingsViewController.swift; sourceTree = "<group>"; };
 		C28B51C71BEE6F5C00522875 /* Baker-Haigh-Nimocks-House-Heritage-Square-Fayetteville-NC.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Baker-Haigh-Nimocks-House-Heritage-Square-Fayetteville-NC.JPG"; sourceTree = "<group>"; };
+		C2975F881BEE8CB200590646 /* DetailListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailListingViewController.swift; sourceTree = "<group>"; };
+		C2975F8A1BEE93D700590646 /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EstimoteSDK.framework; sourceTree = "<group>"; };
+		C2975F8C1BEE93EE00590646 /* ZipcodeHackathon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZipcodeHackathon-Bridging-Header.h"; sourceTree = "<group>"; };
+		C2975F931BEE9C9100590646 /* BeaconTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconTestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2975F8B1BEE93D700590646 /* EstimoteSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,10 +93,12 @@
 		C28B51891BEE6C2100522875 = {
 			isa = PBXGroup;
 			children = (
+				C2975F8A1BEE93D700590646 /* EstimoteSDK.framework */,
 				C28B51941BEE6C2100522875 /* ZipcodeHackathon */,
 				C28B51A91BEE6C2100522875 /* ZipcodeHackathonTests */,
 				C28B51B41BEE6C2200522875 /* ZipcodeHackathonUITests */,
 				C28B51931BEE6C2100522875 /* Products */,
+				C2975F8C1BEE93EE00590646 /* ZipcodeHackathon-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +119,8 @@
 				C28B51951BEE6C2100522875 /* AppDelegate.swift */,
 				C28B51971BEE6C2100522875 /* ViewController.swift */,
 				C28B51991BEE6C2100522875 /* Main.storyboard */,
+				C2975F931BEE9C9100590646 /* BeaconTestViewController.swift */,
+				C2975F881BEE8CB200590646 /* DetailListingViewController.swift */,
 				C27A65BD1BEE75C000F37CFD /* PersonalizeViewController.swift */,
 				C28B51C51BEE6D7700522875 /* ListingsViewController.swift */,
 				C28B51C31BEE6D5E00522875 /* ListingsTableViewCell.swift */,
@@ -271,6 +283,8 @@
 			files = (
 				C28B51981BEE6C2100522875 /* ViewController.swift in Sources */,
 				C28B51961BEE6C2100522875 /* AppDelegate.swift in Sources */,
+				C2975F941BEE9C9100590646 /* BeaconTestViewController.swift in Sources */,
+				C2975F891BEE8CB200590646 /* DetailListingViewController.swift in Sources */,
 				C28B51C41BEE6D5E00522875 /* ListingsTableViewCell.swift in Sources */,
 				C28B51C61BEE6D7700522875 /* ListingsViewController.swift in Sources */,
 				C27A65BE1BEE75C000F37CFD /* PersonalizeViewController.swift in Sources */,
@@ -413,10 +427,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ZipcodeHackathon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = farah.lucas.ZipcodeHackathon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZipcodeHackathon-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -424,10 +445,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ZipcodeHackathon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = farah.lucas.ZipcodeHackathon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZipcodeHackathon-Bridging-Header.h";
 			};
 			name = Release;
 		};

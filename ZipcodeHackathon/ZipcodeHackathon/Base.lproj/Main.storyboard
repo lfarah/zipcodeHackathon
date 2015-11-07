@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B38b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ipG-Ql-nUO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B38b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Uyz-ln-7iK">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
@@ -121,6 +121,80 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="387"/>
+        </scene>
+        <!--Detail Listing View Controller-->
+        <scene sceneID="mJp-sn-hfH">
+            <objects>
+                <viewController id="Vge-3H-UEr" customClass="DetailListingViewController" customModule="ZipcodeHackathon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qAc-BX-esF"/>
+                        <viewControllerLayoutGuide type="bottom" id="CIm-JC-lpO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iPi-TX-01Y">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Baker-Haigh-Nimocks-House-Heritage-Square-Fayetteville-NC.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="ftS-E3-V0M">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ftS-E3-V0M" secondAttribute="height" multiplier="200:101" id="Lbe-UC-eUs"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Lbe-UC-eUs"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Lbe-UC-eUs"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1043 Mangrove Ln" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WeF-bb-JLs">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="219" width="143" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ftS-E3-V0M" firstAttribute="top" secondItem="iPi-TX-01Y" secondAttribute="topMargin" id="dM6-G9-2eJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ftS-E3-V0M" secondAttribute="trailing" constant="-20" id="ist-VM-s21"/>
+                            <constraint firstItem="ftS-E3-V0M" firstAttribute="leading" secondItem="iPi-TX-01Y" secondAttribute="leadingMargin" constant="-20" id="rYp-GH-EKT"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ftS-E3-V0M"/>
+                                <exclude reference="WeF-bb-JLs"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="dM6-G9-2eJ"/>
+                                <exclude reference="ist-VM-s21"/>
+                                <exclude reference="rYp-GH-EKT"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ftS-E3-V0M"/>
+                                <include reference="WeF-bb-JLs"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="dM6-G9-2eJ"/>
+                                <include reference="ist-VM-s21"/>
+                                <include reference="rYp-GH-EKT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V9J-JH-fMk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="990" y="387"/>
         </scene>
         <!--Personalize View Controller-->
         <scene sceneID="hYo-xu-HyH">
@@ -452,7 +526,50 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Zh-pO-wGM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="969" y="394"/>
+            <point key="canvasLocation" x="2094" y="387"/>
+        </scene>
+        <!--Beacon Test View Controller-->
+        <scene sceneID="wSe-BU-vg5">
+            <objects>
+                <viewController id="Uyz-ln-7iK" customClass="BeaconTestViewController" customModule="ZipcodeHackathon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5jN-pS-3hl"/>
+                        <viewControllerLayoutGuide type="bottom" id="izu-7s-1FF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jb7-zd-Bmn">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AK6-HC-a1i">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="70" y="172" width="235" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="AK6-HC-a1i"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="AK6-HC-a1i"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="lblPlace" destination="AK6-HC-a1i" id="VFA-YG-SAJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ju-g4-6xy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2859" y="278"/>
         </scene>
     </scenes>
     <resources>
