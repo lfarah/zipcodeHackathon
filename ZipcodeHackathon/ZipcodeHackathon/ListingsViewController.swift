@@ -24,7 +24,11 @@ class ListingsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+  
+  func getStuffFromServer()
+  {
     
+  }
 
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
   {
