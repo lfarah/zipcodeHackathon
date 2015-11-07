@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B38b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ipG-Ql-nUO">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="eTC-mQ-DKq">
+            <objects>
+                <navigationController id="ipG-Ql-nUO" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vjb-9k-tFP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cnc-GP-d1e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vex-fy-ATq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-419" y="387"/>
+        </scene>
+        <!--Listings-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ListingsViewController" customModule="ZipcodeHackathon" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +35,78 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="92" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zUe-Qc-UcZ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="92" id="d2x-rR-abz" customClass="ListingsTableViewCell" customModule="ZipcodeHackathon" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="92"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d2x-rR-abz" id="7ad-jf-ib2">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="91.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Baker-Haigh-Nimocks-House-Heritage-Square-Fayetteville-NC.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="aPC-bb-9hx">
+                                                    <rect key="frame" x="0.0" y="0.0" width="91" height="91.5"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="aPC-bb-9hx" secondAttribute="height" multiplier="1:1" id="4De-06-5Sh"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrB-hn-PNA">
+                                                    <rect key="frame" x="99" y="8" width="493" height="75.5"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="aPC-bb-9hx" firstAttribute="top" secondItem="7ad-jf-ib2" secondAttribute="topMargin" constant="-8" id="5kO-io-AYC"/>
+                                                <constraint firstItem="KrB-hn-PNA" firstAttribute="top" secondItem="7ad-jf-ib2" secondAttribute="topMargin" id="C8F-K4-eJo"/>
+                                                <constraint firstItem="aPC-bb-9hx" firstAttribute="leading" secondItem="7ad-jf-ib2" secondAttribute="leadingMargin" constant="-8" id="LN0-qb-IMH"/>
+                                                <constraint firstItem="KrB-hn-PNA" firstAttribute="leading" secondItem="aPC-bb-9hx" secondAttribute="trailing" constant="8" id="MRe-e4-1nV"/>
+                                                <constraint firstItem="KrB-hn-PNA" firstAttribute="bottom" secondItem="7ad-jf-ib2" secondAttribute="bottomMargin" id="TJy-ui-knm"/>
+                                                <constraint firstItem="KrB-hn-PNA" firstAttribute="trailing" secondItem="7ad-jf-ib2" secondAttribute="trailingMargin" id="wK5-BT-8Qd"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="aPC-bb-9hx" secondAttribute="bottom" constant="-8" id="xck-6b-ppi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <outlet property="imgvListing" destination="aPC-bb-9hx" id="jPC-Bk-2wE"/>
+                                            <outlet property="lblAddressListing" destination="KrB-hn-PNA" id="jIQ-U0-4OL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="AkZ-2P-Jcc"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="yBc-jl-cDM"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zUe-Qc-UcZ" secondAttribute="bottom" id="6xo-ts-NLR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zUe-Qc-UcZ" secondAttribute="trailing" constant="-20" id="7H4-Aj-qIy"/>
+                            <constraint firstItem="zUe-Qc-UcZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="ING-Ga-lwy"/>
+                            <constraint firstItem="zUe-Qc-UcZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="NeP-NV-f5z"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Listings" id="Rhl-tT-LXw"/>
+                    <connections>
+                        <outlet property="table" destination="zUe-Qc-UcZ" id="u2c-gL-Mrs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="387"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Baker-Haigh-Nimocks-House-Heritage-Square-Fayetteville-NC.JPG" width="3072" height="2304"/>
+    </resources>
 </document>

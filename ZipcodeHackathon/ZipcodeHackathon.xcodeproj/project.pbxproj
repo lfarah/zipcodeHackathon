@@ -14,6 +14,9 @@
 		C28B51A01BEE6C2100522875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28B519E1BEE6C2100522875 /* LaunchScreen.storyboard */; };
 		C28B51AB1BEE6C2100522875 /* ZipcodeHackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B51AA1BEE6C2100522875 /* ZipcodeHackathonTests.swift */; };
 		C28B51B61BEE6C2200522875 /* ZipcodeHackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B51B51BEE6C2200522875 /* ZipcodeHackathonUITests.swift */; };
+		C28B51C41BEE6D5E00522875 /* ListingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B51C31BEE6D5E00522875 /* ListingsTableViewCell.swift */; };
+		C28B51C61BEE6D7700522875 /* ListingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B51C51BEE6D7700522875 /* ListingsViewController.swift */; };
+		C28B51C81BEE6F5C00522875 /* Baker-Haigh-Nimocks-House-Heritage-Square-Fayetteville-NC.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C28B51C71BEE6F5C00522875 /* Baker-Haigh-Nimocks-House-Heritage-Square-Fayetteville-NC.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		C28B51B11BEE6C2100522875 /* ZipcodeHackathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZipcodeHackathonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28B51B51BEE6C2200522875 /* ZipcodeHackathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipcodeHackathonUITests.swift; sourceTree = "<group>"; };
 		C28B51B71BEE6C2200522875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C28B51C31BEE6D5E00522875 /* ListingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingsTableViewCell.swift; sourceTree = "<group>"; };
+		C28B51C51BEE6D7700522875 /* ListingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingsViewController.swift; sourceTree = "<group>"; };
+		C28B51C71BEE6F5C00522875 /* Baker-Haigh-Nimocks-House-Heritage-Square-Fayetteville-NC.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Baker-Haigh-Nimocks-House-Heritage-Square-Fayetteville-NC.JPG"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +103,12 @@
 		C28B51941BEE6C2100522875 /* ZipcodeHackathon */ = {
 			isa = PBXGroup;
 			children = (
+				C28B51C71BEE6F5C00522875 /* Baker-Haigh-Nimocks-House-Heritage-Square-Fayetteville-NC.JPG */,
 				C28B51951BEE6C2100522875 /* AppDelegate.swift */,
 				C28B51971BEE6C2100522875 /* ViewController.swift */,
 				C28B51991BEE6C2100522875 /* Main.storyboard */,
+				C28B51C51BEE6D7700522875 /* ListingsViewController.swift */,
+				C28B51C31BEE6D5E00522875 /* ListingsTableViewCell.swift */,
 				C28B519C1BEE6C2100522875 /* Assets.xcassets */,
 				C28B519E1BEE6C2100522875 /* LaunchScreen.storyboard */,
 				C28B51A11BEE6C2100522875 /* Info.plist */,
@@ -231,6 +240,7 @@
 			files = (
 				C28B51A01BEE6C2100522875 /* LaunchScreen.storyboard in Resources */,
 				C28B519D1BEE6C2100522875 /* Assets.xcassets in Resources */,
+				C28B51C81BEE6F5C00522875 /* Baker-Haigh-Nimocks-House-Heritage-Square-Fayetteville-NC.JPG in Resources */,
 				C28B519B1BEE6C2100522875 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +268,8 @@
 			files = (
 				C28B51981BEE6C2100522875 /* ViewController.swift in Sources */,
 				C28B51961BEE6C2100522875 /* AppDelegate.swift in Sources */,
+				C28B51C41BEE6D5E00522875 /* ListingsTableViewCell.swift in Sources */,
+				C28B51C61BEE6D7700522875 /* ListingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
