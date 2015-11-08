@@ -23,7 +23,7 @@ class ListingsViewController: UIViewController {
   
   func getStuffFromServer()
   {
-    Alamofire.request(.GET, "https://radiant-springs-1893.herokuapp.com/query?zipcode=85048&price=10000000")
+    Alamofire.request(.GET, "https://intense-ocean-6663.herokuapp.com/query?zipcode=85048&price=10000000")
       .responseJSON { response in
         //        print(response.data)     // server data
         //        print(response.result)   // result of response serialization
