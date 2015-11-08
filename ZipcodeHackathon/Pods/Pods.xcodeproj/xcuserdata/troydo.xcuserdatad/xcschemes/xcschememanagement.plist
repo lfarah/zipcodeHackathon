@@ -6,18 +6,18 @@
 	<dict>
 		<key>Alamofire.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-ZipcodeHackathon.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>507494A62A1A085B7551FAFF0059667A</key>
+		<key>41008E66D6B79ECD045033C2D101F257</key>
 		<dict>
 			<key>primary</key>
 			<true/>
