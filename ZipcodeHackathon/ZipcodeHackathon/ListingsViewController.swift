@@ -141,7 +141,6 @@ class ListingsViewController: UIViewController {
             {
               //UI
               cell.imgvListing.image = imageData
-
           }
       }
     }
@@ -150,6 +149,12 @@ class ListingsViewController: UIViewController {
   
   func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
   {
-    self.performSegueWithIdentifier("detail", sender: self)
+    self.performSegueWithIdentifier("detail", sender: arr[indexPath.row])
   }
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    let theDestination = (segue.destinationViewController as! DetailListingViewController)
+    let dicinfo = sender
+    theDestination.dicInfo = dicinfo as! NSDictionary
+}
+
 }
