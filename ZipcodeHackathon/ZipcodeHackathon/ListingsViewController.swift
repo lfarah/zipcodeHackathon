@@ -21,66 +21,6 @@ class ListingsViewController: UIViewController {
 //    self.authMagicSauce()
   }
   
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-  
-  func authMagicSauce () {
-    
-    let paramsBody:Dictionary<String,String> = ["traits":"BIG5_Openess","uid":"1063389267005163"]
-    
-    let request = NSMutableURLRequest(URL: NSURL(string: "http://api-v2.applymagicsauce.com/like_ids?traits=BIG5_Openess&uid=1063389267005163")!)
-    let session = NSURLSession.sharedSession()
-    request.HTTPMethod = "POST"
-    request.setValue("application/json", forHTTPHeaderField: "Content-type")
-    request.setValue("application/json", forHTTPHeaderField: "Accept")
-    request.setValue("X-Auth-Token", forHTTPHeaderField: "50ohh5tje1t6sk7lfjlcd1d23u")
-
-    do
-    {
-    request.HTTPBody = try NSJSONSerialization.dataWithJSONObject(paramsBody, options: .PrettyPrinted)
-    let task = session.dataTaskWithRequest(request, completionHandler:{data, response, error -> Void in
-      
-      if error != nil {
-        
-        print("shit")
-        
-      } else {
-        
-        
-        var jsonError: NSError?
-        //            println(data)
-        do
-        {
-        if let json = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary {
-          // this code is executed if the json is a NSDictionary
-          //                println(json)
-          
-          
-          print(json)
-          
-        } else {
-          // otherwise, this code is executed
-          print("shit")
-        }
-        
-      }
-        catch{}
-      
-      }
-    })
-      task.resume()
-
-    }
-    catch{
-    }
-    
-    
-    
-  }
-  
-  
   func getStuffFromServer()
   {
     Alamofire.request(.GET, "https://radiant-springs-1893.herokuapp.com/query?zipcode=85048&price=10000000")

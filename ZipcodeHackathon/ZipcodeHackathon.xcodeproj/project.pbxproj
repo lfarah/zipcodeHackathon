@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C27A65BE1BEE75C000F37CFD /* PersonalizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27A65BD1BEE75C000F37CFD /* PersonalizeViewController.swift */; };
+		C28549ED1BEEF17500A18D58 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28549EC1BEEF17500A18D58 /* LoadingViewController.swift */; };
 		C28B51961BEE6C2100522875 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B51951BEE6C2100522875 /* AppDelegate.swift */; };
 		C28B51981BEE6C2100522875 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28B51971BEE6C2100522875 /* ViewController.swift */; };
 		C28B519B1BEE6C2100522875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C28B51991BEE6C2100522875 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		606755F968FECCE3945DE92F /* Pods-ZipcodeHackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZipcodeHackathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZipcodeHackathon/Pods-ZipcodeHackathon.debug.xcconfig"; sourceTree = "<group>"; };
 		6DDF4DEA8C2104F400FF6E6A /* Pods-ZipcodeHackathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZipcodeHackathon.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZipcodeHackathon/Pods-ZipcodeHackathon.release.xcconfig"; sourceTree = "<group>"; };
 		C27A65BD1BEE75C000F37CFD /* PersonalizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalizeViewController.swift; sourceTree = "<group>"; };
+		C28549EC1BEEF17500A18D58 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		C28B51921BEE6C2100522875 /* ZipcodeHackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZipcodeHackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28B51951BEE6C2100522875 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C28B51971BEE6C2100522875 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				C28B51951BEE6C2100522875 /* AppDelegate.swift */,
 				C28B51971BEE6C2100522875 /* ViewController.swift */,
 				C28B51991BEE6C2100522875 /* Main.storyboard */,
+				C28549EC1BEEF17500A18D58 /* LoadingViewController.swift */,
 				C2975F931BEE9C9100590646 /* BeaconTestViewController.swift */,
 				C2975F881BEE8CB200590646 /* DetailListingViewController.swift */,
 				C27A65BD1BEE75C000F37CFD /* PersonalizeViewController.swift */,
@@ -367,6 +370,7 @@
 				C28B51981BEE6C2100522875 /* ViewController.swift in Sources */,
 				C28B51961BEE6C2100522875 /* AppDelegate.swift in Sources */,
 				C2975F941BEE9C9100590646 /* BeaconTestViewController.swift in Sources */,
+				C28549ED1BEEF17500A18D58 /* LoadingViewController.swift in Sources */,
 				C2975F891BEE8CB200590646 /* DetailListingViewController.swift in Sources */,
 				C28B51C41BEE6D5E00522875 /* ListingsTableViewCell.swift in Sources */,
 				C28B51C61BEE6D7700522875 /* ListingsViewController.swift in Sources */,
