@@ -26,7 +26,7 @@ class DetailListingViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-      if let address = self.dicInfo["address"] as? String, let image = self.dicInfo["media"]![0]["url"], price = self.dicInfo["price"],let beds = self.dicInfo["bedrooms"], let baths = self.dicInfo["baths"]
+      if let address = self.dicInfo["address"] as? String, let image = self.dicInfo["media"]![0]["url"], price = self.dicInfo["price"],let beds = self.dicInfo["bedrooms"], let baths = self.dicInfo["baths"],let detail = self.dicInfo["publicRemarks"]
         
       {
         //Address
@@ -46,6 +46,8 @@ class DetailListingViewController: UIViewController {
         //Baths
         self.lblBaths.text =  "\(baths) Baths"
         
+        //Detail
+        self.lblDescription.text = detail as! String
         //Image
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0))
           {

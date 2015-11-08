@@ -18,6 +18,18 @@ class LoadingViewController: UIViewController {
   var maxConscientiousness = 0.0
   var maxAgreeableness = 0.0
   
+  
+  override func prefersStatusBarHidden() -> Bool {
+    return navigationController?.navigationBarHidden == true
+  }
+  override func viewWillAppear(animated: Bool) {
+    navigationController?.setNavigationBarHidden(navigationController?.navigationBarHidden == false, animated: true) //or animated: false
+
+  }
+  
+  override func preferredStatusBarUpdateAnimation() -> UIStatusBarAnimation {
+    return UIStatusBarAnimation.Fade
+  }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -46,11 +58,18 @@ self.getStuffFromServer()
           self.maxAgreeableness = json["Agreeableness"] as! Double
           
           NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: "change", userInfo: nil, repeats: true)
+          NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: "move", userInfo: nil, repeats: false)
+
 
         }
         catch{}
         
     }
+  }
+  
+  func move()
+  {
+    self.performSegueWithIdentifier("top5", sender: nil)
   }
   
   

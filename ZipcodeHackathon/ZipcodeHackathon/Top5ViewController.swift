@@ -8,7 +8,7 @@
 
 import UIKit
 import Alamofire
-class ListingsViewController: UIViewController {
+class Top5ViewController: UIViewController {
   
   
   @IBOutlet weak var table: UITableView!
@@ -17,13 +17,24 @@ class ListingsViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    self.title = "Top 5 Personality Match"
     self.getStuffFromServer()
-//    self.authMagicSauce()
+    //    self.authMagicSauce()
+  }
+  override func prefersStatusBarHidden() -> Bool {
+    return navigationController?.navigationBarHidden == false
+  }
+  override func viewWillAppear(animated: Bool) {
+    navigationController?.setNavigationBarHidden(navigationController?.navigationBarHidden == false, animated: true) //or animated: false
+    
   }
   
+  override func preferredStatusBarUpdateAnimation() -> UIStatusBarAnimation {
+    return UIStatusBarAnimation.Fade
+  }
   func getStuffFromServer()
   {
-    Alamofire.request(.GET, "https://radiant-springs-1893.herokuapp.com/query?zipcode=85048&price=10000000")
+    Alamofire.request(.GET, "https://radiant-springs-1893.herokuapp.com/personal_query?zipcode=85048&downpayment=100000")
       .responseJSON { response in
         //        print(response.data)     // server data
         //        print(response.result)   // result of response serialization
@@ -56,7 +67,7 @@ class ListingsViewController: UIViewController {
     let place = arr[indexPath.row]
     print(indexPath.row)
     if let address = place["address"] as? String, let image = place["media"]![0]["url"], price = place["price"],let beds = place["bedrooms"], let baths = place["baths"]
-
+      
     {
       //Address
       cell.lblAddressListing.text = address
@@ -94,10 +105,10 @@ class ListingsViewController: UIViewController {
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if (segue.identifier == "detail") {
       // pass data to next view
-    let theDestination = (segue.destinationViewController as! DetailListingViewController)
-    let dicinfo = sender
-    theDestination.dicInfo = dicinfo as! NSDictionary
-}
+      let theDestination = (segue.destinationViewController as! DetailListingViewController)
+      let dicinfo = sender
+      theDestination.dicInfo = dicinfo as! NSDictionary
+    }
   }
-
+  
 }
