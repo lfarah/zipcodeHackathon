@@ -150,6 +150,6 @@ class ListingsViewController: UIViewController {
   
   func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
   {
-    
+    self.performSegueWithIdentifier("detail", sender: self)
   }
 }
