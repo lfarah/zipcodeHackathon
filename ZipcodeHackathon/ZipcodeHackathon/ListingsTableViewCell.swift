@@ -12,10 +12,14 @@ class ListingsTableViewCell: UITableViewCell {
 
   @IBOutlet weak var imgvListing: UIImageView!
   @IBOutlet weak var lblAddressListing: UILabel!
+  @IBOutlet weak var lblPrice: UILabel!
+  @IBOutlet weak var lblBedsBaths: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-    }
+  
+  }
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
